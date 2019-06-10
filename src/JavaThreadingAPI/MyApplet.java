@@ -9,6 +9,10 @@ public class MyApplet extends Applet {
         MyClass myClass = new MyClass();
         myClass.start();
 
+        MySecondClass mySecondClass = new MySecondClass();
+        Thread thread = new Thread(mySecondClass);
+        thread.start();
+
     }
 
 }
